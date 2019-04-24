@@ -1,7 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './formStyles.css'
 import Fieldset from './Fieldset'
-import Input from './Input'
 import Checkbox from './Checkbox'
 import Select from './Select'
 import FillForm from './FillForm'
@@ -19,7 +19,7 @@ const options = {
     targetComponentIdentifier: ['none'],
 }
 
-const CommonForm = ({identifier, style, ...rest}) => {
+const CommonForm = ({anfComponent: {identifier, style, ...rest}}) => {
 
     const anchorInputs = [
         {name: "Target"},
@@ -76,6 +76,56 @@ const CommonForm = ({identifier, style, ...rest}) => {
             </Fieldset>
         </div>
     )
+}
+
+CommonForm.propTypes = {
+    activeComponent: PropTypes.shape({
+        identifier: PropTypes.string.isRequired,
+        role: PropTypes.oneOf(options.role),
+        hidden: PropTypes.bool,
+        anchor: PropTypes.shape({
+            target: PropTypes.string,
+            targetComponentIdentifier: PropTypes.string,
+            rangeStart: PropTypes.number,
+            rangeLength: PropTypes.number,
+            originAnchorPosition: PropTypes.oneOf(options.verticalPosition),
+            targetAnchorPosition: PropTypes.oneOf(options.verticalPosition),
+        }),
+        layout: PropTypes.shape({
+            columnStart: PropTypes.number,
+            columnSpan: PropTypes.number,
+            minimumHeight: PropTypes.oneOfType([
+                PropTypes.number,
+                PropTypes.string,
+            ]),
+            maximumContentWidth: PropTypes.oneOfType([
+                PropTypes.number,
+                PropTypes.string,
+            ]),
+            horizontalContentAlignment: PropTypes.oneOf(options.horizontalPosition),
+            ignoreDocumentGutter: PropTypes.bool,
+            ignoreDocumentMargin: PropTypes.bool,
+            margin: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string]))
+        }),
+        style: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.shape({
+                backgroundColor: PropTypes.string,
+                opacity: PropTypes.number,
+                border: PropTypes.shape({
+                    all: PropTypes.shape({
+                        width: PropTypes.number,
+                        color: PropTypes.string
+                    }),
+                    top: PropTypes.bool,
+                    right: PropTypes.bool,
+                    bottom: PropTypes.bool,
+                    left: PropTypes.bool,
+                }),
+                fill: PropTypes.object,
+            }),
+        ]),
+    }),
 }
 
 export default CommonForm

@@ -6,7 +6,8 @@ import CommonForm from './CommonForm'
 
 export const commonFormData = {
     identifier: '1893458237', 
-    style: {fill: {type: 'none'}}
+    style: {fill: {type: 'none'}},
+    hidden: false
 }
 export const linearGradientFill = 
     {...commonFormData, 
@@ -31,8 +32,8 @@ export const actions = {
 
 storiesOf('CommonForm', module)
     .addDecorator(story => <div style={{padding: '10px', maxWidth: '380px'}}>{story()}</div>)
-    .add('default', () => <CommonForm {...commonFormData} />)
-    .add('linearGradient fill', () => <CommonForm {...linearGradientFill} />)
-    .add('image fill', () => <CommonForm {...imageFill} />)
-    .add('repeatableImage fill', () => <CommonForm {...repeatableImageFill} />)
-    .add('video fill', () => <CommonForm {...videoFill} />)
+    .add('default', () => <CommonForm anfComponent={commonFormData} />)
+    .add('linearGradient fill', () => <CommonForm anfComponent={linearGradientFill} />)
+    .add('image fill', () => <CommonForm anfComponent={imageFill} />)
+    .add('repeatableImage fill', () => <CommonForm anfComponent={repeatableImageFill} />)
+    .add('video fill', () => <CommonForm anfComponent={videoFill} />)
