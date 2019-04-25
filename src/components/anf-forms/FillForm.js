@@ -2,15 +2,7 @@ import React from 'react'
 import './formStyles.css'
 import Fieldset from './Fieldset'
 import Input from './Input'
-
-const options = {
-    verticalPosition: ['top', 'center', 'bottom'],
-    horizontalPosition: ['left', 'center', 'right'],
-    fillType: ['none', 'linear_gradient', 'image', 'repeatable_image', 'video'],
-    fillMode: ['fit', 'cover'],
-    fillAttachment: ['fixed', 'scroll'],
-    fillRepeat: ['none', 'x', 'y', 'both']
-}
+import options from './selectOptions'
 
 const FillForm = ({fill: {type, colorStops}, ...rest}) => { 
 

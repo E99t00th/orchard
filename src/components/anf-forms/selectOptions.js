@@ -13,7 +13,11 @@ const selectOptions = {
     sizeClass: ['', 'any', 'regular', 'compact'],
     contSize: ['', 'XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL', 'AX-M', 'AX-L', 'AX-XL', 'AX-XXL', 'AX-XXXL'],
     viewLocation: ['', 'any', 'article', 'issue_table_of_contents', 'issue'],
-    platform: ['', 'any', 'ios', 'macos']
+    platform: ['', 'any', 'ios', 'macos'],
+    fillType: ['none', 'linear_gradient', 'image', 'repeatable_image', 'video'],
+    fillMode: ['fit', 'cover'],
+    fillAttachment: ['fixed', 'scroll'],
+    fillRepeat: ['none', 'x', 'y', 'both'],
 }
 
 export default selectOptions
