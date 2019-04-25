@@ -4213,6 +4213,26 @@ exports[`Storyshots CommonForm video fill 1`] = `
 </div>
 `;
 
+exports[`Storyshots ConditionalsForm another conditional open 1`] = `
+<div
+  className="CommonForm"
+  style={
+    Object {
+      "maxWidth": "380px",
+      "padding": "10px",
+    }
+  }
+>
+  <button
+    name="conditional-open"
+    onClick={[Function]}
+  >
+    IF
+  </button>
+   Conditionals
+</div>
+`;
+
 exports[`Storyshots ConditionalsForm default 1`] = `
 <div
   className="CommonForm"
@@ -4224,7 +4244,28 @@ exports[`Storyshots ConditionalsForm default 1`] = `
   }
 >
   <button
+    name="conditional-open"
+    onClick={[Function]}
+  >
+    IF
+  </button>
+   Conditionals
+</div>
+`;
+
+exports[`Storyshots ConditionalsForm this conditional open 1`] = `
+<div
+  className="CommonForm"
+  style={
+    Object {
+      "maxWidth": "380px",
+      "padding": "10px",
+    }
+  }
+>
+  <button
     name="conditional-back"
+    onClick={[Function]}
   >
     <span
       aria-hidden="true"
@@ -4248,6 +4289,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <select
         className="margin-btm-small"
         name="view-location"
+        onChange={[Function]}
       >
         <option
           value=""
@@ -4285,6 +4327,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <select
         className="margin-btm-small"
         name="subscription-status"
+        onChange={[Function]}
       >
         <option
           value=""
@@ -4312,6 +4355,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <select
         className="margin-btm-small"
         name="horizontal-size-class"
+        onChange={[Function]}
       >
         <option
           value=""
@@ -4344,6 +4388,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <select
         className="margin-btm-small"
         name="vertical-size-class"
+        onChange={[Function]}
       >
         <option
           value=""
@@ -4376,6 +4421,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <select
         className="margin-btm-small"
         name="min-content-size-category"
+        onChange={[Function]}
       >
         <option
           value=""
@@ -4453,6 +4499,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <select
         className="margin-btm-small"
         name="max-content-size-category"
+        onChange={[Function]}
       >
         <option
           value=""
@@ -4530,6 +4577,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <input
         className="margin-btm-small"
         name="min-spec-version"
+        onChange={[Function]}
         type="text"
       />
     </label>
@@ -4542,6 +4590,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <input
         className="margin-btm-small"
         name="max-spec-version"
+        onChange={[Function]}
         type="text"
       />
     </label>
@@ -4554,6 +4603,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <input
         className="margin-btm-small"
         name="min-columns"
+        onChange={[Function]}
         type="text"
       />
     </label>
@@ -4566,6 +4616,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <input
         className="margin-btm-small"
         name="max-columns"
+        onChange={[Function]}
         type="text"
       />
     </label>
@@ -4578,6 +4629,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <input
         className="margin-btm-small"
         name="min-viewport-aspect-ratio"
+        onChange={[Function]}
         type="text"
       />
     </label>
@@ -4590,6 +4642,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <input
         className="margin-btm-small"
         name="max-viewport-aspect-ratio"
+        onChange={[Function]}
         type="text"
       />
     </label>
@@ -4602,6 +4655,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <input
         className="margin-btm-small"
         name="min-viewport-width"
+        onChange={[Function]}
         type="text"
       />
     </label>
@@ -4614,6 +4668,7 @@ exports[`Storyshots ConditionalsForm default 1`] = `
       <input
         className="margin-btm-small"
         name="max-viewport-width"
+        onChange={[Function]}
         type="text"
       />
     </label>
@@ -4623,51 +4678,10 @@ exports[`Storyshots ConditionalsForm default 1`] = `
     >
       Platform
       <br />
-      <input
+      <select
         className="margin-btm-small"
         name="platform"
-        type="text"
-      />
-    </label>
-  </fieldset>
-</div>
-`;
-
-exports[`Storyshots ConditionalsForm open 1`] = `
-<div
-  className="CommonForm"
-  style={
-    Object {
-      "maxWidth": "380px",
-      "padding": "10px",
-    }
-  }
->
-  <button
-    name="conditional-back"
-  >
-    <span
-      aria-hidden="true"
-      className="material-icons MuiIcon-root-10 MuiIcon-fontSizeInherit-16"
-    >
-      arrow_back_ios
-    </span>
-  </button>
-  <fieldset
-    className="margin-btm-small"
-  >
-    <legend>
-      Conditions
-    </legend>
-    <label
-      className="half-width"
-      htmlFor="view-location"
-    >
-      View Location
-      <br />
-      <select
-        className="margin-btm-small"
-        name="view-location"
+        onChange={[Function]}
       >
         <option
           value=""
@@ -4680,374 +4694,16 @@ exports[`Storyshots ConditionalsForm open 1`] = `
           any
         </option>
         <option
-          value="article"
+          value="ios"
         >
-          article
+          ios
         </option>
         <option
-          value="issue_table_of_contents"
+          value="macos"
         >
-          issue_table_of_contents
-        </option>
-        <option
-          value="issue"
-        >
-          issue
+          macos
         </option>
       </select>
-    </label>
-    <label
-      className="half-width"
-      htmlFor="subscription-status"
-    >
-      Subscription Status
-      <br />
-      <select
-        className="margin-btm-small"
-        name="subscription-status"
-      >
-        <option
-          value=""
-        >
-          
-        </option>
-        <option
-          value="bundle"
-        >
-          bundle
-        </option>
-        <option
-          value="subscribed"
-        >
-          subscribed
-        </option>
-      </select>
-    </label>
-    <label
-      className="half-width"
-      htmlFor="horizontal-size-class"
-    >
-      Horizontal Size Class
-      <br />
-      <select
-        className="margin-btm-small"
-        name="horizontal-size-class"
-      >
-        <option
-          value=""
-        >
-          
-        </option>
-        <option
-          value="any"
-        >
-          any
-        </option>
-        <option
-          value="regular"
-        >
-          regular
-        </option>
-        <option
-          value="compact"
-        >
-          compact
-        </option>
-      </select>
-    </label>
-    <label
-      className="half-width"
-      htmlFor="vertical-size-class"
-    >
-      Vertical Size Class
-      <br />
-      <select
-        className="margin-btm-small"
-        name="vertical-size-class"
-      >
-        <option
-          value=""
-        >
-          
-        </option>
-        <option
-          value="any"
-        >
-          any
-        </option>
-        <option
-          value="regular"
-        >
-          regular
-        </option>
-        <option
-          value="compact"
-        >
-          compact
-        </option>
-      </select>
-    </label>
-    <label
-      className="half-width"
-      htmlFor="min-content-size-category"
-    >
-      Min Content Size Category
-      <br />
-      <select
-        className="margin-btm-small"
-        name="min-content-size-category"
-      >
-        <option
-          value=""
-        >
-          
-        </option>
-        <option
-          value="XS"
-        >
-          XS
-        </option>
-        <option
-          value="S"
-        >
-          S
-        </option>
-        <option
-          value="M"
-        >
-          M
-        </option>
-        <option
-          value="L"
-        >
-          L
-        </option>
-        <option
-          value="XL"
-        >
-          XL
-        </option>
-        <option
-          value="XXL"
-        >
-          XXL
-        </option>
-        <option
-          value="XXXL"
-        >
-          XXXL
-        </option>
-        <option
-          value="AX-M"
-        >
-          AX-M
-        </option>
-        <option
-          value="AX-L"
-        >
-          AX-L
-        </option>
-        <option
-          value="AX-XL"
-        >
-          AX-XL
-        </option>
-        <option
-          value="AX-XXL"
-        >
-          AX-XXL
-        </option>
-        <option
-          value="AX-XXXL"
-        >
-          AX-XXXL
-        </option>
-      </select>
-    </label>
-    <label
-      className="half-width"
-      htmlFor="max-content-size-category"
-    >
-      Max Content Size Category
-      <br />
-      <select
-        className="margin-btm-small"
-        name="max-content-size-category"
-      >
-        <option
-          value=""
-        >
-          
-        </option>
-        <option
-          value="XS"
-        >
-          XS
-        </option>
-        <option
-          value="S"
-        >
-          S
-        </option>
-        <option
-          value="M"
-        >
-          M
-        </option>
-        <option
-          value="L"
-        >
-          L
-        </option>
-        <option
-          value="XL"
-        >
-          XL
-        </option>
-        <option
-          value="XXL"
-        >
-          XXL
-        </option>
-        <option
-          value="XXXL"
-        >
-          XXXL
-        </option>
-        <option
-          value="AX-M"
-        >
-          AX-M
-        </option>
-        <option
-          value="AX-L"
-        >
-          AX-L
-        </option>
-        <option
-          value="AX-XL"
-        >
-          AX-XL
-        </option>
-        <option
-          value="AX-XXL"
-        >
-          AX-XXL
-        </option>
-        <option
-          value="AX-XXXL"
-        >
-          AX-XXXL
-        </option>
-      </select>
-    </label>
-    <label
-      className="half-width"
-      htmlFor="min-spec-version"
-    >
-      Min Spec Version
-      <br />
-      <input
-        className="margin-btm-small"
-        name="min-spec-version"
-        type="text"
-      />
-    </label>
-    <label
-      className="half-width"
-      htmlFor="max-spec-version"
-    >
-      Max Spec Version
-      <br />
-      <input
-        className="margin-btm-small"
-        name="max-spec-version"
-        type="text"
-      />
-    </label>
-    <label
-      className="half-width"
-      htmlFor="min-columns"
-    >
-      Min Columns
-      <br />
-      <input
-        className="margin-btm-small"
-        name="min-columns"
-        type="text"
-      />
-    </label>
-    <label
-      className="half-width"
-      htmlFor="max-columns"
-    >
-      Max Columns
-      <br />
-      <input
-        className="margin-btm-small"
-        name="max-columns"
-        type="text"
-      />
-    </label>
-    <label
-      className="half-width"
-      htmlFor="min-viewport-aspect-ratio"
-    >
-      Min Viewport Aspect Ratio
-      <br />
-      <input
-        className="margin-btm-small"
-        name="min-viewport-aspect-ratio"
-        type="text"
-      />
-    </label>
-    <label
-      className="half-width"
-      htmlFor="max-viewport-aspect-ratio"
-    >
-      Max Viewport Aspect Ratio
-      <br />
-      <input
-        className="margin-btm-small"
-        name="max-viewport-aspect-ratio"
-        type="text"
-      />
-    </label>
-    <label
-      className="half-width"
-      htmlFor="min-viewport-width"
-    >
-      Min Viewport Width
-      <br />
-      <input
-        className="margin-btm-small"
-        name="min-viewport-width"
-        type="text"
-      />
-    </label>
-    <label
-      className="half-width"
-      htmlFor="max-viewport-width"
-    >
-      Max Viewport Width
-      <br />
-      <input
-        className="margin-btm-small"
-        name="max-viewport-width"
-        type="text"
-      />
-    </label>
-    <label
-      className="half-width"
-      htmlFor="platform"
-    >
-      Platform
-      <br />
-      <input
-        className="margin-btm-small"
-        name="platform"
-        type="text"
-      />
     </label>
   </fieldset>
 </div>
