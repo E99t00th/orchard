@@ -4,66 +4,66 @@ import Fieldset from './Fieldset'
 import Input from './Input'
 import options from './selectOptions'
 
-const FillForm = ({fill: {type, colorStops}, ...rest}) => { 
+const FillForm = ({fill: f}) => { 
 
-    let basicFillInputs = [
-        {name: "Type", options: options.fillType },
-        {name: "Attachment", options: options.fillAttachment },
+    const basicFillInputs = [
+        {name: "Type", value: f.type, options: options.fillType },
+        {name: "Attachment", value: f.attachment, options: options.fillAttachment },
     ]
 
-    let linearGradientInputs = [
+    const linearGradientInputs = [
         ...basicFillInputs
     ]
 
-    let commonInputs = [
+    const commonInputs = [
         ...basicFillInputs,
-        {name: "Horizontal Alignment", options: options.horizontalPosition},
-        {name: "Vertical Alignment", options: options.verticalPosition},
-        {name: "URL"},
+        {name: "Horizontal Alignment", value: f.horizontalAlignment, options: options.horizontalPosition},
+        {name: "Vertical Alignment", value: f.verticalAlignment, options: options.verticalPosition},
+        {name: "URL", value: f.URL},
     ]
 
-    let imageInputs = [
+    const imageInputs = [
         ...commonInputs,
-        {name: "Fill Mode", options: options.fillMode },
+        {name: "Fill Mode", value: f.fillMode, options: options.fillMode },
     ]
 
-    let repeatableImageInputs = [
+    const repeatableImageInputs = [
         ...commonInputs,
-        {name: "Repeat", options: options.fillRepeat},
-        {name: "Height"},
-        {name: "Width"},
+        {name: "Repeat", value: f.repeat, options: options.fillRepeat},
+        {name: "Height", value: f.height},
+        {name: "Width", value: f.width},
     ]
 
-    let videoInputs = [
+    const videoInputs = [
         ...imageInputs,
-        {name: "Still URL"},
-        {name: "Loop", checked: false},
+        {name: "Still URL", value: f.stillURL},
+        {name: "Loop", value: f.loop, checked: false},
     ]
 
-    let inputs = {
+    const inputs = {
         linear_gradient: linearGradientInputs,
         image: imageInputs,
         repeatable_image: repeatableImageInputs,
         video: videoInputs
     } 
 
-    let mapColorStops = (x, i) => {
+    const mapColorStops = (x, i) => {
         return (<>
-            <Input name={`Color ${i + 1}`} classes="third-width" />
-            <Input name={`Location ${i + 1}`} classes="third-width" />
+            <Input name={`Color ${i + 1}`} value={x.color} classes="third-width" />
+            <Input name={`Location ${i + 1}`} value={x.location} classes="third-width" />
             <button name="deleteColorStop">Delete</button>
         </>)
     }
 
-    let linearGradientSpecialInputs = (<>
-        <Input name="Angle" classes="half-width" /><br/>
-        {(colorStops) && colorStops.map(mapColorStops)}
+    const linearGradientSpecialInputs = (<>
+        <Input name="Angle" value={f.angle} classes="half-width" /><br/>
+        {(f.colorStops) && f.colorStops.map(mapColorStops)}
         <button name="addColorStop" classes="half-width">Add Color Stop</button>
     </>)
 
     return (
-        <Fieldset legend="FILL" inputs={inputs[type] || basicFillInputs}>
-            {type === 'linear_gradient' && linearGradientSpecialInputs}
+        <Fieldset legend="FILL" inputs={inputs[f.type] || basicFillInputs}>
+            {f.type === 'linear_gradient' && linearGradientSpecialInputs}
         </Fieldset>
     )
 }
