@@ -12,8 +12,8 @@ const selectOptions = {
     subscriptionStatus: ['', 'bundle', 'subscribed'],
     sizeClass: ['', 'any', 'regular', 'compact'],
     contSize: ['', 'XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL', 'AX-M', 'AX-L', 'AX-XL', 'AX-XXL', 'AX-XXXL'],
-    viewLocation: ['any', 'article', 'issue_table_of_contents', 'issue'],
-    platform: ['any', 'ios', 'macos']
+    viewLocation: ['', 'any', 'article', 'issue_table_of_contents', 'issue'],
+    platform: ['', 'any', 'ios', 'macos']
 }
 
 export default selectOptions
