@@ -2,12 +2,12 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
-import dummydata from '../../dummydata'
+import data from '../../dummydata'
 
 import CommonForm from './CommonForm'
 
 export const anfComponent = {
-    ...dummydata.common[0]
+    ...data.common[0]
 }
 export const linearGradientFill = {
     ...anfComponent,
