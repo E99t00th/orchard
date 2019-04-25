@@ -8,7 +8,7 @@ import options from './selectOptions'
 // this shows up in the CommonForm when the [IF] button is clicked,
 // activating conditional mode. the sortable component list
 // also becomes a sortable conditional object list
-const ConditionalsForm = ({identifier, name, activeConditional, conditions, onInputChange}) => {
+const ConditionalsForm = ({identifier, name, activeConditional, conditions, onInputChange, onClick}) => {
 
     const conditionalsFormInputs = [
         {name: "View Location", onInputChange, options: options.viewLocation},
@@ -31,20 +31,21 @@ const ConditionalsForm = ({identifier, name, activeConditional, conditions, onIn
     return (activeConditional === name) 
         ? (
             <>
-                <button name="conditional-back">{<Icon fontSize="inherit">arrow_back_ios</Icon>}</button>
+                <button name="conditional-back" onClick={onClick}>{<Icon fontSize="inherit">arrow_back_ios</Icon>}</button>
                 <Fieldset legend="Conditions" inputs={conditionalsFormInputs} />
             </>
         ) 
         : (
             <>
-                <button name="conditional-open">IF</button> Conditionals
+                <button name="conditional-open" onClick={onClick}>IF</button> Conditionals
             </>
         )
 }
 
 ConditionalsForm.propTypes = {
     identifier: PropTypes.string.isRequired,
-    activeConditional: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    activeConditional: PropTypes.oneOf(['', '']).isRequired,
     conditions: PropTypes.shape({
         viewLocation: PropTypes.oneOf(options.viewLocation),
         subscriptionStatus: PropTypes.oneOf(options.subscriptionStatus),
