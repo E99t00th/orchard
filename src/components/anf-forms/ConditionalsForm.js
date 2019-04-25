@@ -25,7 +25,7 @@ const ConditionalsForm = ({identifier, name, activeConditional, conditions, onIn
         {name: "Max Viewport Aspect Ratio", onInputChange},
         {name: "Min Viewport Width", onInputChange},
         {name: "Max Viewport Width", onInputChange},
-        {name: "Platform", onInputChange},
+        {name: "Platform", onInputChange, options: options.platform},
     ]
 
     return (activeConditional === name) 
@@ -43,8 +43,8 @@ const ConditionalsForm = ({identifier, name, activeConditional, conditions, onIn
 }
 
 ConditionalsForm.propTypes = {
-    identifier: PropTypes.string,
-    activeConditional: PropTypes.string,
+    identifier: PropTypes.string.isRequired,
+    activeConditional: PropTypes.string.isRequired,
     conditions: PropTypes.shape({
         viewLocation: PropTypes.oneOf(options.viewLocation),
         subscriptionStatus: PropTypes.oneOf(options.subscriptionStatus),
@@ -60,11 +60,9 @@ ConditionalsForm.propTypes = {
         maxViewportAspectRatio: PropTypes.number,
         minViewportWidth: PropTypes.number,
         maxViewportWidth: PropTypes.number,
-        platform: PropTypes.oneOfType([
-            PropTypes.string, PropTypes.number
-        ]),
+        platform: PropTypes.oneOf(options.platform),
     }),
-    onInputChange: PropTypes.func,
+    onInputChange: PropTypes.func.isRequired,
 }
 
 export default ConditionalsForm
