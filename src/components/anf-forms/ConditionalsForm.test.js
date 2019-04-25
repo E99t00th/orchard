@@ -1,15 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import CommonForm from './CommonForm'
-import {anfComponent} from './CommonForm.stories'
+import ConditionalsForm from './ConditionalsForm'
+import {conditions, miscProps} from './ConditionalsForm.stories.js'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
 
   const events = {
-    onInputChange: jest.fn()
+    onInputChange: jest.fn(),
+    onClick: jest.fn(),
   }
 
-  ReactDOM.render(<CommonForm anfComponent={anfComponent} {...events} />, div)
+  ReactDOM.render(<ConditionalsForm activeConditional='' conditions={conditions} {...miscProps} {...events} />, div)
   ReactDOM.unmountComponentAtNode(div)
 })

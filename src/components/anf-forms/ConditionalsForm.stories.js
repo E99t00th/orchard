@@ -23,11 +23,18 @@ export const conditions = {
     platform: options.platform[0],
 }
 
+export const miscProps = {
+    identifier: '38594795833',
+    name: 'component'
+}
+
 export const actions = {
-    onInputChange: action('updated input')
+    onInputChange: action('updated input'),
+    onClick: action('click handled'),
 }
 
 storiesOf('ConditionalsForm', module)
     .addDecorator(story => <div className="CommonForm" style={{padding: '10px', maxWidth: '380px'}}>{story()}</div>)
-    .add('default', () => <ConditionalsForm conditions={conditions} {...actions} />)
-    .add('open', () => <ConditionalsForm conditions={conditions} {...actions} />)
+    .add('default', () => <ConditionalsForm conditions={conditions} activeConditional='' {...actions} {...miscProps} />)
+    .add('this conditional open', () => <ConditionalsForm conditions={conditions} activeConditional='component' {...actions} {...miscProps} />)
+    .add('another conditional open', () => <ConditionalsForm conditions={conditions} activeConditional='style' {...actions} {...miscProps} />)
