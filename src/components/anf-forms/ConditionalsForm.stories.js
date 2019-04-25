@@ -16,3 +16,4 @@ export const actions = {
 storiesOf('ConditionalsForm', module)
     .addDecorator(story => <div className="CommonForm" style={{padding: '10px', maxWidth: '380px'}}>{story()}</div>)
     .add('default', () => <ConditionalsForm {...conditionalsFormData} />)
+    .add('open', () => <ConditionalsForm {...conditionalsFormData} />)
