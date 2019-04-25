@@ -45,7 +45,7 @@ const ConditionalsForm = ({identifier, name, activeConditional, conditions, onIn
 ConditionalsForm.propTypes = {
     identifier: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    activeConditional: PropTypes.oneOf(['', '']).isRequired,
+    activeConditional: PropTypes.oneOf(['', 'component', 'style', 'layout']).isRequired,
     conditions: PropTypes.shape({
         viewLocation: PropTypes.oneOf(options.viewLocation),
         subscriptionStatus: PropTypes.oneOf(options.subscriptionStatus),
