@@ -48,11 +48,11 @@ const FillForm = ({fill: f}) => {
     } 
 
     const mapColorStops = (x, i) => {
-        return (<>
+        return (<React.Fragment key={'colorstop' + i}>
             <Input name={`Color ${i + 1}`} value={x.color} classes="third-width" />
             <Input name={`Location ${i + 1}`} value={x.location} classes="third-width" />
             <button name="deleteColorStop">Delete</button>
-        </>)
+        </React.Fragment>)
     }
 
     const linearGradientSpecialInputs = (<>

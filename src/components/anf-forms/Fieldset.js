@@ -5,14 +5,14 @@ import Checkbox from './Checkbox';
 
 const Fieldset = ({legend, children, inputs, childrenAbove}) => {
 
-    const mapInputs = x => {
+    const mapInputs = (x, i) => {
         const classes = x.classes || "half-width"
 
         return (x.options) 
-            ? <Select {...x} classes={classes} /> 
+            ? <Select {...x} key={legend + i} classes={classes} /> 
             : ( ( typeof x.checked === "boolean" ) 
-                ? <Checkbox {...x} classes={classes} />
-                : <Input {...x} classes={classes} /> )
+                ? <Checkbox {...x} key={legend + i} classes={classes} />
+                : <Input {...x} key={legend + i} classes={classes} /> )
     }
 
     return (
