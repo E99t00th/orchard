@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Select = ({name, options, classes}) => {
+const Select = ({name, options, classes, onInputChange}) => {
     const htmlName = name.split(' ').join('-').toLowerCase()
 
     const mapOptions = x => <option key={x} value={x}>{x}</option>
@@ -9,7 +9,7 @@ const Select = ({name, options, classes}) => {
         <>
             <label className={classes} htmlFor={htmlName}>
                 {name}<br/>
-                <select className="margin-btm-small" name={htmlName}>
+                <select className="margin-btm-small" name={htmlName} onChange={onInputChange}>
                     {options.map(mapOptions)}
                 </select>
             </label>
