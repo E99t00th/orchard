@@ -10,6 +10,6 @@ it('renders without crashing', () => {
     onInputChange: jest.fn()
   }
 
-  ReactDOM.render(<CommonForm anfComponent={anfComponent} {...events} />, div)
+  ReactDOM.render(<CommonForm anfComponent={anfComponent} activeConditionalType='' {...events} />, div)
   ReactDOM.unmountComponentAtNode(div)
 })

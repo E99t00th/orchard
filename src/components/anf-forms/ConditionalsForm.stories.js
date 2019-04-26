@@ -6,12 +6,12 @@ import ConditionalsForm from './ConditionalsForm'
 import options from './selectOptions'
 
 export const conditions = {
-    viewLocation: options.viewLocation[0],
-    subscriptionStatus: options.subscriptionStatus[0],
-    horizontalSizeClass: options.sizeClass[0],
-    verticalSizeClass: options.sizeClass[0],
-    minContentSizeCategory: options.contSize[0],
-    maxContentSizeCategory: options.contSize[0],
+    viewLocation: options.viewLocation[1],
+    subscriptionStatus: options.subscriptionStatus[1],
+    horizontalSizeClass: options.sizeClass[1],
+    verticalSizeClass: options.sizeClass[1],
+    minContentSizeCategory: options.contSize[1],
+    maxContentSizeCategory: options.contSize[1],
     minSpecVersion: 'sample spec min',
     maxSpecVersion: 'sample spec max',
     minColumns: 1,
@@ -20,7 +20,7 @@ export const conditions = {
     maxViewportAspectRatio: 1.78,
     minViewportWidth: 375,
     maxViewportWidth: 812,
-    platform: options.platform[0],
+    platform: options.platform[1],
 }
 
 export const miscProps = {
@@ -35,6 +35,6 @@ export const actions = {
 
 storiesOf('ConditionalsForm', module)
     .addDecorator(story => <div className="CommonForm" style={{padding: '10px', maxWidth: '380px'}}>{story()}</div>)
-    .add('default', () => <ConditionalsForm conditions={conditions} activeConditional='' {...actions} {...miscProps} />)
-    .add('this conditional open', () => <ConditionalsForm conditions={conditions} activeConditional='component' {...actions} {...miscProps} />)
-    .add('another conditional open', () => <ConditionalsForm conditions={conditions} activeConditional='style' {...actions} {...miscProps} />)
+    .add('default', () => <ConditionalsForm conditions={conditions} activeConditionalType='' {...actions} {...miscProps} />)
+    .add('this conditional open', () => <ConditionalsForm conditions={conditions} activeConditionalType='component' {...actions} {...miscProps} />)
+    .add('another conditional open', () => <ConditionalsForm conditions={conditions} activeConditionalType='style' {...actions} {...miscProps} />)

@@ -16,6 +16,13 @@ exports[`Storyshots CommonForm default 1`] = `
       Identifier: 
       1893458237
     </p>
+    <button
+      name="conditional-open"
+    >
+      IF
+    </button>
+     Conditionals
+    <br />
     <label
       className="half-width"
       htmlFor="role"
@@ -26,6 +33,7 @@ exports[`Storyshots CommonForm default 1`] = `
         className="margin-btm-small"
         name="role"
         onChange={[Function]}
+        value="title"
       >
         <option
           value="title"
@@ -292,6 +300,7 @@ exports[`Storyshots CommonForm default 1`] = `
           className="margin-btm-small"
           name="target-component-identifier"
           onChange={[Function]}
+          value="41956782409"
         >
           <option
             value="none"
@@ -338,6 +347,7 @@ exports[`Storyshots CommonForm default 1`] = `
           className="margin-btm-small"
           name="origin-anchor-position"
           onChange={[Function]}
+          value="top"
         >
           <option
             value="top"
@@ -366,6 +376,7 @@ exports[`Storyshots CommonForm default 1`] = `
           className="margin-btm-small"
           name="target-anchor-position"
           onChange={[Function]}
+          value="top"
         >
           <option
             value="top"
@@ -457,6 +468,7 @@ exports[`Storyshots CommonForm default 1`] = `
           className="margin-btm-small"
           name="horizontal-content-alignment"
           onChange={[Function]}
+          value="left"
         >
           <option
             value="left"
@@ -701,6 +713,8 @@ exports[`Storyshots CommonForm default 1`] = `
           <select
             className="margin-btm-small"
             name="type"
+            onChange={[Function]}
+            value="none"
           >
             <option
               value="none"
@@ -738,6 +752,7 @@ exports[`Storyshots CommonForm default 1`] = `
           <select
             className="margin-btm-small"
             name="attachment"
+            onChange={[Function]}
           >
             <option
               value="fixed"
@@ -773,6 +788,13 @@ exports[`Storyshots CommonForm image fill 1`] = `
       Identifier: 
       1893458237
     </p>
+    <button
+      name="conditional-open"
+    >
+      IF
+    </button>
+     Conditionals
+    <br />
     <label
       className="half-width"
       htmlFor="role"
@@ -783,6 +805,7 @@ exports[`Storyshots CommonForm image fill 1`] = `
         className="margin-btm-small"
         name="role"
         onChange={[Function]}
+        value="title"
       >
         <option
           value="title"
@@ -1049,6 +1072,7 @@ exports[`Storyshots CommonForm image fill 1`] = `
           className="margin-btm-small"
           name="target-component-identifier"
           onChange={[Function]}
+          value="41956782409"
         >
           <option
             value="none"
@@ -1095,6 +1119,7 @@ exports[`Storyshots CommonForm image fill 1`] = `
           className="margin-btm-small"
           name="origin-anchor-position"
           onChange={[Function]}
+          value="top"
         >
           <option
             value="top"
@@ -1123,6 +1148,7 @@ exports[`Storyshots CommonForm image fill 1`] = `
           className="margin-btm-small"
           name="target-anchor-position"
           onChange={[Function]}
+          value="top"
         >
           <option
             value="top"
@@ -1214,6 +1240,7 @@ exports[`Storyshots CommonForm image fill 1`] = `
           className="margin-btm-small"
           name="horizontal-content-alignment"
           onChange={[Function]}
+          value="left"
         >
           <option
             value="left"
@@ -1458,6 +1485,8 @@ exports[`Storyshots CommonForm image fill 1`] = `
           <select
             className="margin-btm-small"
             name="type"
+            onChange={[Function]}
+            value="image"
           >
             <option
               value="none"
@@ -1495,6 +1524,7 @@ exports[`Storyshots CommonForm image fill 1`] = `
           <select
             className="margin-btm-small"
             name="attachment"
+            onChange={[Function]}
           >
             <option
               value="fixed"
@@ -1517,6 +1547,7 @@ exports[`Storyshots CommonForm image fill 1`] = `
           <select
             className="margin-btm-small"
             name="horizontal-alignment"
+            onChange={[Function]}
           >
             <option
               value="left"
@@ -1544,6 +1575,7 @@ exports[`Storyshots CommonForm image fill 1`] = `
           <select
             className="margin-btm-small"
             name="vertical-alignment"
+            onChange={[Function]}
           >
             <option
               value="top"
@@ -1571,6 +1603,7 @@ exports[`Storyshots CommonForm image fill 1`] = `
           <input
             className="margin-btm-small"
             name="url"
+            onChange={[Function]}
             type="text"
           />
         </label>
@@ -1583,6 +1616,7 @@ exports[`Storyshots CommonForm image fill 1`] = `
           <select
             className="margin-btm-small"
             name="fill-mode"
+            onChange={[Function]}
           >
             <option
               value="fit"
@@ -1618,6 +1652,13 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
       Identifier: 
       1893458237
     </p>
+    <button
+      name="conditional-open"
+    >
+      IF
+    </button>
+     Conditionals
+    <br />
     <label
       className="half-width"
       htmlFor="role"
@@ -1628,6 +1669,7 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
         className="margin-btm-small"
         name="role"
         onChange={[Function]}
+        value="title"
       >
         <option
           value="title"
@@ -1894,6 +1936,7 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
           className="margin-btm-small"
           name="target-component-identifier"
           onChange={[Function]}
+          value="41956782409"
         >
           <option
             value="none"
@@ -1940,6 +1983,7 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
           className="margin-btm-small"
           name="origin-anchor-position"
           onChange={[Function]}
+          value="top"
         >
           <option
             value="top"
@@ -1968,6 +2012,7 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
           className="margin-btm-small"
           name="target-anchor-position"
           onChange={[Function]}
+          value="top"
         >
           <option
             value="top"
@@ -2059,6 +2104,7 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
           className="margin-btm-small"
           name="horizontal-content-alignment"
           onChange={[Function]}
+          value="left"
         >
           <option
             value="left"
@@ -2303,6 +2349,8 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
           <select
             className="margin-btm-small"
             name="type"
+            onChange={[Function]}
+            value="linear_gradient"
           >
             <option
               value="none"
@@ -2340,6 +2388,7 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
           <select
             className="margin-btm-small"
             name="attachment"
+            onChange={[Function]}
           >
             <option
               value="fixed"
@@ -2362,6 +2411,7 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
           <input
             className="margin-btm-small"
             name="angle"
+            onChange={[Function]}
             type="text"
           />
         </label>
@@ -2375,7 +2425,9 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
           <input
             className="margin-btm-small"
             name="color-1"
+            onChange={[Function]}
             type="text"
+            value="#FFF"
           />
         </label>
         <label
@@ -2387,7 +2439,9 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
           <input
             className="margin-btm-small"
             name="location-1"
+            onChange={[Function]}
             type="text"
+            value={0}
           />
         </label>
         <button
@@ -2404,7 +2458,9 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
           <input
             className="margin-btm-small"
             name="color-2"
+            onChange={[Function]}
             type="text"
+            value="#DDD"
           />
         </label>
         <label
@@ -2416,7 +2472,9 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
           <input
             className="margin-btm-small"
             name="location-2"
+            onChange={[Function]}
             type="text"
+            value={50}
           />
         </label>
         <button
@@ -2433,7 +2491,9 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
           <input
             className="margin-btm-small"
             name="color-3"
+            onChange={[Function]}
             type="text"
+            value="#FFDD00"
           />
         </label>
         <label
@@ -2445,7 +2505,9 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
           <input
             className="margin-btm-small"
             name="location-3"
+            onChange={[Function]}
             type="text"
+            value={100}
           />
         </label>
         <button
@@ -2459,6 +2521,980 @@ exports[`Storyshots CommonForm linearGradient fill 1`] = `
         >
           Add Color Stop
         </button>
+      </fieldset>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`Storyshots CommonForm open component conditional 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "380px",
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    className="CommonForm"
+  >
+    <p>
+      Identifier: 
+      1893458237
+    </p>
+    <button
+      name="conditional-back"
+    >
+      <span
+        aria-hidden="true"
+        className="material-icons MuiIcon-root-1 MuiIcon-fontSizeInherit-7"
+      >
+        arrow_back_ios
+      </span>
+    </button>
+    <fieldset
+      className="margin-btm-small"
+    >
+      <legend>
+        Conditions
+      </legend>
+      <label
+        className="half-width"
+        htmlFor="view-location"
+      >
+        View Location
+        <br />
+        <select
+          className="margin-btm-small"
+          name="view-location"
+          onChange={[Function]}
+        >
+          <option
+            value=""
+          >
+            
+          </option>
+          <option
+            value="any"
+          >
+            any
+          </option>
+          <option
+            value="article"
+          >
+            article
+          </option>
+          <option
+            value="issue_table_of_contents"
+          >
+            issue_table_of_contents
+          </option>
+          <option
+            value="issue"
+          >
+            issue
+          </option>
+        </select>
+      </label>
+      <label
+        className="half-width"
+        htmlFor="subscription-status"
+      >
+        Subscription Status
+        <br />
+        <select
+          className="margin-btm-small"
+          name="subscription-status"
+          onChange={[Function]}
+        >
+          <option
+            value=""
+          >
+            
+          </option>
+          <option
+            value="bundle"
+          >
+            bundle
+          </option>
+          <option
+            value="subscribed"
+          >
+            subscribed
+          </option>
+        </select>
+      </label>
+      <label
+        className="half-width"
+        htmlFor="horizontal-size-class"
+      >
+        Horizontal Size Class
+        <br />
+        <select
+          className="margin-btm-small"
+          name="horizontal-size-class"
+          onChange={[Function]}
+        >
+          <option
+            value=""
+          >
+            
+          </option>
+          <option
+            value="any"
+          >
+            any
+          </option>
+          <option
+            value="regular"
+          >
+            regular
+          </option>
+          <option
+            value="compact"
+          >
+            compact
+          </option>
+        </select>
+      </label>
+      <label
+        className="half-width"
+        htmlFor="vertical-size-class"
+      >
+        Vertical Size Class
+        <br />
+        <select
+          className="margin-btm-small"
+          name="vertical-size-class"
+          onChange={[Function]}
+        >
+          <option
+            value=""
+          >
+            
+          </option>
+          <option
+            value="any"
+          >
+            any
+          </option>
+          <option
+            value="regular"
+          >
+            regular
+          </option>
+          <option
+            value="compact"
+          >
+            compact
+          </option>
+        </select>
+      </label>
+      <label
+        className="half-width"
+        htmlFor="min-content-size-category"
+      >
+        Min Content Size Category
+        <br />
+        <select
+          className="margin-btm-small"
+          name="min-content-size-category"
+          onChange={[Function]}
+        >
+          <option
+            value=""
+          >
+            
+          </option>
+          <option
+            value="XS"
+          >
+            XS
+          </option>
+          <option
+            value="S"
+          >
+            S
+          </option>
+          <option
+            value="M"
+          >
+            M
+          </option>
+          <option
+            value="L"
+          >
+            L
+          </option>
+          <option
+            value="XL"
+          >
+            XL
+          </option>
+          <option
+            value="XXL"
+          >
+            XXL
+          </option>
+          <option
+            value="XXXL"
+          >
+            XXXL
+          </option>
+          <option
+            value="AX-M"
+          >
+            AX-M
+          </option>
+          <option
+            value="AX-L"
+          >
+            AX-L
+          </option>
+          <option
+            value="AX-XL"
+          >
+            AX-XL
+          </option>
+          <option
+            value="AX-XXL"
+          >
+            AX-XXL
+          </option>
+          <option
+            value="AX-XXXL"
+          >
+            AX-XXXL
+          </option>
+        </select>
+      </label>
+      <label
+        className="half-width"
+        htmlFor="max-content-size-category"
+      >
+        Max Content Size Category
+        <br />
+        <select
+          className="margin-btm-small"
+          name="max-content-size-category"
+          onChange={[Function]}
+        >
+          <option
+            value=""
+          >
+            
+          </option>
+          <option
+            value="XS"
+          >
+            XS
+          </option>
+          <option
+            value="S"
+          >
+            S
+          </option>
+          <option
+            value="M"
+          >
+            M
+          </option>
+          <option
+            value="L"
+          >
+            L
+          </option>
+          <option
+            value="XL"
+          >
+            XL
+          </option>
+          <option
+            value="XXL"
+          >
+            XXL
+          </option>
+          <option
+            value="XXXL"
+          >
+            XXXL
+          </option>
+          <option
+            value="AX-M"
+          >
+            AX-M
+          </option>
+          <option
+            value="AX-L"
+          >
+            AX-L
+          </option>
+          <option
+            value="AX-XL"
+          >
+            AX-XL
+          </option>
+          <option
+            value="AX-XXL"
+          >
+            AX-XXL
+          </option>
+          <option
+            value="AX-XXXL"
+          >
+            AX-XXXL
+          </option>
+        </select>
+      </label>
+      <label
+        className="half-width"
+        htmlFor="min-spec-version"
+      >
+        Min Spec Version
+        <br />
+        <input
+          className="margin-btm-small"
+          name="min-spec-version"
+          onChange={[Function]}
+          type="text"
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="max-spec-version"
+      >
+        Max Spec Version
+        <br />
+        <input
+          className="margin-btm-small"
+          name="max-spec-version"
+          onChange={[Function]}
+          type="text"
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="min-columns"
+      >
+        Min Columns
+        <br />
+        <input
+          className="margin-btm-small"
+          name="min-columns"
+          onChange={[Function]}
+          type="text"
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="max-columns"
+      >
+        Max Columns
+        <br />
+        <input
+          className="margin-btm-small"
+          name="max-columns"
+          onChange={[Function]}
+          type="text"
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="min-viewport-aspect-ratio"
+      >
+        Min Viewport Aspect Ratio
+        <br />
+        <input
+          className="margin-btm-small"
+          name="min-viewport-aspect-ratio"
+          onChange={[Function]}
+          type="text"
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="max-viewport-aspect-ratio"
+      >
+        Max Viewport Aspect Ratio
+        <br />
+        <input
+          className="margin-btm-small"
+          name="max-viewport-aspect-ratio"
+          onChange={[Function]}
+          type="text"
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="min-viewport-width"
+      >
+        Min Viewport Width
+        <br />
+        <input
+          className="margin-btm-small"
+          name="min-viewport-width"
+          onChange={[Function]}
+          type="text"
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="max-viewport-width"
+      >
+        Max Viewport Width
+        <br />
+        <input
+          className="margin-btm-small"
+          name="max-viewport-width"
+          onChange={[Function]}
+          type="text"
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="platform"
+      >
+        Platform
+        <br />
+        <select
+          className="margin-btm-small"
+          name="platform"
+          onChange={[Function]}
+        >
+          <option
+            value=""
+          >
+            
+          </option>
+          <option
+            value="any"
+          >
+            any
+          </option>
+          <option
+            value="ios"
+          >
+            ios
+          </option>
+          <option
+            value="macos"
+          >
+            macos
+          </option>
+        </select>
+      </label>
+    </fieldset>
+    <br />
+    <label
+      className="quarter-width"
+      htmlFor="hidden"
+    >
+      Hidden
+      <input
+        checked={false}
+        className="margin-btm-small"
+        name="hidden"
+        onChange={[Function]}
+        type="checkbox"
+      />
+    </label>
+    <fieldset
+      className="margin-btm-small"
+    >
+      <legend>
+        ANCHOR
+      </legend>
+      <label
+        className="half-width"
+        htmlFor="target"
+      >
+        Target
+        <br />
+        <input
+          className="margin-btm-small"
+          name="target"
+          onChange={[Function]}
+          type="text"
+          value="p01"
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="target-component-identifier"
+      >
+        Target Component Identifier
+        <br />
+        <select
+          className="margin-btm-small"
+          name="target-component-identifier"
+          onChange={[Function]}
+          value="41956782409"
+        >
+          <option
+            value="none"
+          >
+            none
+          </option>
+        </select>
+      </label>
+      <label
+        className="half-width"
+        htmlFor="range-start"
+      >
+        Range Start
+        <br />
+        <input
+          className="margin-btm-small"
+          name="range-start"
+          onChange={[Function]}
+          type="text"
+          value={10}
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="range-length"
+      >
+        Range Length
+        <br />
+        <input
+          className="margin-btm-small"
+          name="range-length"
+          onChange={[Function]}
+          type="text"
+          value={5}
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="origin-anchor-position"
+      >
+        Origin Anchor Position
+        <br />
+        <select
+          className="margin-btm-small"
+          name="origin-anchor-position"
+          onChange={[Function]}
+          value="top"
+        >
+          <option
+            value="top"
+          >
+            top
+          </option>
+          <option
+            value="center"
+          >
+            center
+          </option>
+          <option
+            value="bottom"
+          >
+            bottom
+          </option>
+        </select>
+      </label>
+      <label
+        className="half-width"
+        htmlFor="target-anchor-position"
+      >
+        Target Anchor Position
+        <br />
+        <select
+          className="margin-btm-small"
+          name="target-anchor-position"
+          onChange={[Function]}
+          value="top"
+        >
+          <option
+            value="top"
+          >
+            top
+          </option>
+          <option
+            value="center"
+          >
+            center
+          </option>
+          <option
+            value="bottom"
+          >
+            bottom
+          </option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset
+      className="margin-btm-small"
+    >
+      <legend>
+        LAYOUT
+      </legend>
+      <label
+        className="half-width"
+        htmlFor="column-start"
+      >
+        Column Start
+        <br />
+        <input
+          className="margin-btm-small"
+          name="column-start"
+          onChange={[Function]}
+          type="text"
+          value={0}
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="column-span"
+      >
+        Column Span
+        <br />
+        <input
+          className="margin-btm-small"
+          name="column-span"
+          onChange={[Function]}
+          type="text"
+          value={11}
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="minimum-height"
+      >
+        Minimum Height
+        <br />
+        <input
+          className="margin-btm-small"
+          name="minimum-height"
+          onChange={[Function]}
+          type="text"
+          value="100vh"
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="maximum-content-width"
+      >
+        Maximum Content Width
+        <br />
+        <input
+          className="margin-btm-small"
+          name="maximum-content-width"
+          onChange={[Function]}
+          type="text"
+          value="100vw"
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="horizontal-content-alignment"
+      >
+        Horizontal Content Alignment
+        <br />
+        <select
+          className="margin-btm-small"
+          name="horizontal-content-alignment"
+          onChange={[Function]}
+          value="left"
+        >
+          <option
+            value="left"
+          >
+            left
+          </option>
+          <option
+            value="center"
+          >
+            center
+          </option>
+          <option
+            value="right"
+          >
+            right
+          </option>
+        </select>
+      </label>
+      <label
+        className="half-width"
+        htmlFor="ignore-document-gutter"
+      >
+        Ignore Document Gutter
+        <input
+          checked={false}
+          className="margin-btm-small"
+          name="ignore-document-gutter"
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="ignore-document-margin"
+      >
+        Ignore Document Margin
+        <input
+          checked={false}
+          className="margin-btm-small"
+          name="ignore-document-margin"
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </label>
+      <fieldset
+        className="margin-btm-small"
+      >
+        <legend>
+          MARGIN
+        </legend>
+        <label
+          className="quarter-width"
+          htmlFor="top"
+        >
+          Top
+          <br />
+          <input
+            className="margin-btm-small"
+            name="top"
+            onChange={[Function]}
+            type="text"
+            value="3pt"
+          />
+        </label>
+        <label
+          className="quarter-width"
+          htmlFor="right"
+        >
+          Right
+          <br />
+          <input
+            className="margin-btm-small"
+            name="right"
+            onChange={[Function]}
+            type="text"
+            value="3pt"
+          />
+        </label>
+        <label
+          className="quarter-width"
+          htmlFor="bottom"
+        >
+          Bottom
+          <br />
+          <input
+            className="margin-btm-small"
+            name="bottom"
+            onChange={[Function]}
+            type="text"
+            value="3pt"
+          />
+        </label>
+        <label
+          className="quarter-width"
+          htmlFor="left"
+        >
+          Left
+          <br />
+          <input
+            className="margin-btm-small"
+            name="left"
+            onChange={[Function]}
+            type="text"
+            value="3pt"
+          />
+        </label>
+      </fieldset>
+    </fieldset>
+    <fieldset
+      className="margin-btm-small"
+    >
+      <legend>
+        STYLE
+      </legend>
+      <label
+        className="half-width"
+        htmlFor="background-color"
+      >
+        Background Color
+        <br />
+        <input
+          className="margin-btm-small"
+          name="background-color"
+          onChange={[Function]}
+          type="text"
+          value="#0000FF"
+        />
+      </label>
+      <label
+        className="half-width"
+        htmlFor="opacity"
+      >
+        Opacity
+        <br />
+        <input
+          className="margin-btm-small"
+          name="opacity"
+          onChange={[Function]}
+          type="text"
+          value={0.5}
+        />
+      </label>
+      <fieldset
+        className="margin-btm-small"
+      >
+        <legend>
+          BORDER
+        </legend>
+        <label
+          className="half-width"
+          htmlFor="width"
+        >
+          Width
+          <br />
+          <input
+            className="margin-btm-small"
+            name="width"
+            onChange={[Function]}
+            type="text"
+            value="2pt"
+          />
+        </label>
+        <label
+          className="half-width"
+          htmlFor="color"
+        >
+          Color
+          <br />
+          <input
+            className="margin-btm-small"
+            name="color"
+            onChange={[Function]}
+            type="text"
+            value="#FF0000"
+          />
+        </label>
+        <label
+          className="quarter-width"
+          htmlFor="top"
+        >
+          Top
+          <input
+            checked={false}
+            className="margin-btm-small"
+            name="top"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </label>
+        <label
+          className="quarter-width"
+          htmlFor="right"
+        >
+          Right
+          <input
+            checked={false}
+            className="margin-btm-small"
+            name="right"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </label>
+        <label
+          className="quarter-width"
+          htmlFor="bottom"
+        >
+          Bottom
+          <input
+            checked={false}
+            className="margin-btm-small"
+            name="bottom"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </label>
+        <label
+          className="quarter-width"
+          htmlFor="left"
+        >
+          Left
+          <input
+            checked={false}
+            className="margin-btm-small"
+            name="left"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </label>
+      </fieldset>
+      <fieldset
+        className="margin-btm-small"
+      >
+        <legend>
+          FILL
+        </legend>
+        <label
+          className="half-width"
+          htmlFor="type"
+        >
+          Type
+          <br />
+          <select
+            className="margin-btm-small"
+            name="type"
+            onChange={[Function]}
+            value="none"
+          >
+            <option
+              value="none"
+            >
+              none
+            </option>
+            <option
+              value="linear_gradient"
+            >
+              linear_gradient
+            </option>
+            <option
+              value="image"
+            >
+              image
+            </option>
+            <option
+              value="repeatable_image"
+            >
+              repeatable_image
+            </option>
+            <option
+              value="video"
+            >
+              video
+            </option>
+          </select>
+        </label>
+        <label
+          className="half-width"
+          htmlFor="attachment"
+        >
+          Attachment
+          <br />
+          <select
+            className="margin-btm-small"
+            name="attachment"
+            onChange={[Function]}
+          >
+            <option
+              value="fixed"
+            >
+              fixed
+            </option>
+            <option
+              value="scroll"
+            >
+              scroll
+            </option>
+          </select>
+        </label>
       </fieldset>
     </fieldset>
   </div>
@@ -2481,6 +3517,13 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
       Identifier: 
       1893458237
     </p>
+    <button
+      name="conditional-open"
+    >
+      IF
+    </button>
+     Conditionals
+    <br />
     <label
       className="half-width"
       htmlFor="role"
@@ -2491,6 +3534,7 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
         className="margin-btm-small"
         name="role"
         onChange={[Function]}
+        value="title"
       >
         <option
           value="title"
@@ -2757,6 +3801,7 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
           className="margin-btm-small"
           name="target-component-identifier"
           onChange={[Function]}
+          value="41956782409"
         >
           <option
             value="none"
@@ -2803,6 +3848,7 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
           className="margin-btm-small"
           name="origin-anchor-position"
           onChange={[Function]}
+          value="top"
         >
           <option
             value="top"
@@ -2831,6 +3877,7 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
           className="margin-btm-small"
           name="target-anchor-position"
           onChange={[Function]}
+          value="top"
         >
           <option
             value="top"
@@ -2922,6 +3969,7 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
           className="margin-btm-small"
           name="horizontal-content-alignment"
           onChange={[Function]}
+          value="left"
         >
           <option
             value="left"
@@ -3166,6 +4214,8 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
           <select
             className="margin-btm-small"
             name="type"
+            onChange={[Function]}
+            value="repeatable_image"
           >
             <option
               value="none"
@@ -3203,6 +4253,7 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
           <select
             className="margin-btm-small"
             name="attachment"
+            onChange={[Function]}
           >
             <option
               value="fixed"
@@ -3225,6 +4276,7 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
           <select
             className="margin-btm-small"
             name="horizontal-alignment"
+            onChange={[Function]}
           >
             <option
               value="left"
@@ -3252,6 +4304,7 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
           <select
             className="margin-btm-small"
             name="vertical-alignment"
+            onChange={[Function]}
           >
             <option
               value="top"
@@ -3279,6 +4332,7 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
           <input
             className="margin-btm-small"
             name="url"
+            onChange={[Function]}
             type="text"
           />
         </label>
@@ -3291,6 +4345,7 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
           <select
             className="margin-btm-small"
             name="repeat"
+            onChange={[Function]}
           >
             <option
               value="none"
@@ -3323,6 +4378,7 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
           <input
             className="margin-btm-small"
             name="height"
+            onChange={[Function]}
             type="text"
           />
         </label>
@@ -3335,6 +4391,7 @@ exports[`Storyshots CommonForm repeatableImage fill 1`] = `
           <input
             className="margin-btm-small"
             name="width"
+            onChange={[Function]}
             type="text"
           />
         </label>
@@ -3360,6 +4417,13 @@ exports[`Storyshots CommonForm video fill 1`] = `
       Identifier: 
       1893458237
     </p>
+    <button
+      name="conditional-open"
+    >
+      IF
+    </button>
+     Conditionals
+    <br />
     <label
       className="half-width"
       htmlFor="role"
@@ -3370,6 +4434,7 @@ exports[`Storyshots CommonForm video fill 1`] = `
         className="margin-btm-small"
         name="role"
         onChange={[Function]}
+        value="title"
       >
         <option
           value="title"
@@ -3636,6 +4701,7 @@ exports[`Storyshots CommonForm video fill 1`] = `
           className="margin-btm-small"
           name="target-component-identifier"
           onChange={[Function]}
+          value="41956782409"
         >
           <option
             value="none"
@@ -3682,6 +4748,7 @@ exports[`Storyshots CommonForm video fill 1`] = `
           className="margin-btm-small"
           name="origin-anchor-position"
           onChange={[Function]}
+          value="top"
         >
           <option
             value="top"
@@ -3710,6 +4777,7 @@ exports[`Storyshots CommonForm video fill 1`] = `
           className="margin-btm-small"
           name="target-anchor-position"
           onChange={[Function]}
+          value="top"
         >
           <option
             value="top"
@@ -3801,6 +4869,7 @@ exports[`Storyshots CommonForm video fill 1`] = `
           className="margin-btm-small"
           name="horizontal-content-alignment"
           onChange={[Function]}
+          value="left"
         >
           <option
             value="left"
@@ -4045,6 +5114,8 @@ exports[`Storyshots CommonForm video fill 1`] = `
           <select
             className="margin-btm-small"
             name="type"
+            onChange={[Function]}
+            value="video"
           >
             <option
               value="none"
@@ -4082,6 +5153,7 @@ exports[`Storyshots CommonForm video fill 1`] = `
           <select
             className="margin-btm-small"
             name="attachment"
+            onChange={[Function]}
           >
             <option
               value="fixed"
@@ -4104,6 +5176,7 @@ exports[`Storyshots CommonForm video fill 1`] = `
           <select
             className="margin-btm-small"
             name="horizontal-alignment"
+            onChange={[Function]}
           >
             <option
               value="left"
@@ -4131,6 +5204,7 @@ exports[`Storyshots CommonForm video fill 1`] = `
           <select
             className="margin-btm-small"
             name="vertical-alignment"
+            onChange={[Function]}
           >
             <option
               value="top"
@@ -4158,6 +5232,7 @@ exports[`Storyshots CommonForm video fill 1`] = `
           <input
             className="margin-btm-small"
             name="url"
+            onChange={[Function]}
             type="text"
           />
         </label>
@@ -4170,6 +5245,7 @@ exports[`Storyshots CommonForm video fill 1`] = `
           <select
             className="margin-btm-small"
             name="fill-mode"
+            onChange={[Function]}
           >
             <option
               value="fit"
@@ -4192,6 +5268,7 @@ exports[`Storyshots CommonForm video fill 1`] = `
           <input
             className="margin-btm-small"
             name="still-url"
+            onChange={[Function]}
             type="text"
           />
         </label>
@@ -4204,6 +5281,7 @@ exports[`Storyshots CommonForm video fill 1`] = `
             checked={false}
             className="margin-btm-small"
             name="loop"
+            onChange={[Function]}
             type="checkbox"
           />
         </label>
@@ -4269,7 +5347,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
   >
     <span
       aria-hidden="true"
-      className="material-icons MuiIcon-root-1 MuiIcon-fontSizeInherit-7"
+      className="material-icons MuiIcon-root-10 MuiIcon-fontSizeInherit-16"
     >
       arrow_back_ios
     </span>
@@ -4290,6 +5368,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         className="margin-btm-small"
         name="view-location"
         onChange={[Function]}
+        value="any"
       >
         <option
           value=""
@@ -4328,6 +5407,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         className="margin-btm-small"
         name="subscription-status"
         onChange={[Function]}
+        value="bundle"
       >
         <option
           value=""
@@ -4356,6 +5436,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         className="margin-btm-small"
         name="horizontal-size-class"
         onChange={[Function]}
+        value="any"
       >
         <option
           value=""
@@ -4389,6 +5470,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         className="margin-btm-small"
         name="vertical-size-class"
         onChange={[Function]}
+        value="any"
       >
         <option
           value=""
@@ -4422,6 +5504,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         className="margin-btm-small"
         name="min-content-size-category"
         onChange={[Function]}
+        value="XS"
       >
         <option
           value=""
@@ -4500,6 +5583,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         className="margin-btm-small"
         name="max-content-size-category"
         onChange={[Function]}
+        value="XS"
       >
         <option
           value=""
@@ -4579,6 +5663,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         name="min-spec-version"
         onChange={[Function]}
         type="text"
+        value="sample spec min"
       />
     </label>
     <label
@@ -4592,6 +5677,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         name="max-spec-version"
         onChange={[Function]}
         type="text"
+        value="sample spec max"
       />
     </label>
     <label
@@ -4605,6 +5691,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         name="min-columns"
         onChange={[Function]}
         type="text"
+        value={1}
       />
     </label>
     <label
@@ -4618,6 +5705,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         name="max-columns"
         onChange={[Function]}
         type="text"
+        value={3}
       />
     </label>
     <label
@@ -4631,6 +5719,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         name="min-viewport-aspect-ratio"
         onChange={[Function]}
         type="text"
+        value={0.75}
       />
     </label>
     <label
@@ -4644,6 +5733,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         name="max-viewport-aspect-ratio"
         onChange={[Function]}
         type="text"
+        value={1.78}
       />
     </label>
     <label
@@ -4657,6 +5747,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         name="min-viewport-width"
         onChange={[Function]}
         type="text"
+        value={375}
       />
     </label>
     <label
@@ -4670,6 +5761,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         name="max-viewport-width"
         onChange={[Function]}
         type="text"
+        value={812}
       />
     </label>
     <label
@@ -4682,6 +5774,7 @@ exports[`Storyshots ConditionalsForm this conditional open 1`] = `
         className="margin-btm-small"
         name="platform"
         onChange={[Function]}
+        value="any"
       >
         <option
           value=""

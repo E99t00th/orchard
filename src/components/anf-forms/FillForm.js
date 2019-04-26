@@ -4,11 +4,11 @@ import Fieldset from './Fieldset'
 import Input from './Input'
 import options from './selectOptions'
 
-const FillForm = ({fill: f}) => { 
+const FillForm = ({fill: f, onInputChange}) => { 
 
     const basicFillInputs = [
-        {name: "Type", value: f.type, options: options.fillType },
-        {name: "Attachment", value: f.attachment, options: options.fillAttachment },
+        {name: "Type", onInputChange, value: f.type, options: options.fillType },
+        {name: "Attachment", onInputChange, value: f.attachment, options: options.fillAttachment },
     ]
 
     const linearGradientInputs = [
@@ -17,27 +17,27 @@ const FillForm = ({fill: f}) => {
 
     const commonInputs = [
         ...basicFillInputs,
-        {name: "Horizontal Alignment", value: f.horizontalAlignment, options: options.horizontalPosition},
-        {name: "Vertical Alignment", value: f.verticalAlignment, options: options.verticalPosition},
-        {name: "URL", value: f.URL},
+        {name: "Horizontal Alignment", onInputChange, value: f.horizontalAlignment, options: options.horizontalPosition},
+        {name: "Vertical Alignment", onInputChange, value: f.verticalAlignment, options: options.verticalPosition},
+        {name: "URL", onInputChange, value: f.URL},
     ]
 
     const imageInputs = [
         ...commonInputs,
-        {name: "Fill Mode", value: f.fillMode, options: options.fillMode },
+        {name: "Fill Mode", onInputChange, value: f.fillMode, options: options.fillMode },
     ]
 
     const repeatableImageInputs = [
         ...commonInputs,
-        {name: "Repeat", value: f.repeat, options: options.fillRepeat},
-        {name: "Height", value: f.height},
-        {name: "Width", value: f.width},
+        {name: "Repeat", onInputChange, value: f.repeat, options: options.fillRepeat},
+        {name: "Height", onInputChange, value: f.height},
+        {name: "Width", onInputChange, value: f.width},
     ]
 
     const videoInputs = [
         ...imageInputs,
-        {name: "Still URL", value: f.stillURL},
-        {name: "Loop", value: f.loop, checked: false},
+        {name: "Still URL", onInputChange, value: f.stillURL},
+        {name: "Loop", onInputChange, value: f.loop, checked: false},
     ]
 
     const inputs = {
@@ -49,14 +49,14 @@ const FillForm = ({fill: f}) => {
 
     const mapColorStops = (x, i) => {
         return (<React.Fragment key={'colorstop' + i}>
-            <Input name={`Color ${i + 1}`} value={x.color} classes="third-width" />
-            <Input name={`Location ${i + 1}`} value={x.location} classes="third-width" />
+            <Input name={`Color ${i + 1}`} onInputChange={onInputChange} value={x.color} classes="third-width" />
+            <Input name={`Location ${i + 1}`} onInputChange={onInputChange} value={x.location} classes="third-width" />
             <button name="deleteColorStop">Delete</button>
         </React.Fragment>)
     }
 
     const linearGradientSpecialInputs = (<>
-        <Input name="Angle" value={f.angle} classes="half-width" /><br/>
+        <Input name="Angle" onInputChange={onInputChange} value={f.angle} classes="half-width" /><br/>
         {(f.colorStops) && f.colorStops.map(mapColorStops)}
         <button name="addColorStop" classes="half-width">Add Color Stop</button>
     </>)

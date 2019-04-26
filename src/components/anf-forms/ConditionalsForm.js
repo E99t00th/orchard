@@ -8,27 +8,27 @@ import options from './selectOptions'
 // this shows up in the CommonForm when the [IF] button is clicked,
 // activating conditional mode. the sortable component list
 // also becomes a sortable conditional object list
-const ConditionalsForm = ({identifier, name, activeConditional, conditions, onInputChange, onClick}) => {
+const ConditionalsForm = ({identifier, name, activeConditionalType, conditions: c, onInputChange, onClick}) => {
 
     const conditionalsFormInputs = [
-        {name: "View Location", onInputChange, options: options.viewLocation},
-        {name: "Subscription Status", onInputChange, options: options.subscriptionStatus},
-        {name: "Horizontal Size Class", onInputChange, options: options.sizeClass},
-        {name: "Vertical Size Class", onInputChange, options: options.sizeClass},
-        {name: "Min Content Size Category", onInputChange, options: options.contSize},
-        {name: "Max Content Size Category", onInputChange, options: options.contSize},
-        {name: "Min Spec Version", onInputChange},
-        {name: "Max Spec Version", onInputChange},
-        {name: "Min Columns", onInputChange},
-        {name: "Max Columns", onInputChange},
-        {name: "Min Viewport Aspect Ratio", onInputChange},
-        {name: "Max Viewport Aspect Ratio", onInputChange},
-        {name: "Min Viewport Width", onInputChange},
-        {name: "Max Viewport Width", onInputChange},
-        {name: "Platform", onInputChange, options: options.platform},
+        {name: "View Location", onInputChange, value: c.viewLocation, options: options.viewLocation},
+        {name: "Subscription Status", onInputChange, value: c.subscriptionStatus, options: options.subscriptionStatus},
+        {name: "Horizontal Size Class", onInputChange, value: c.horizontalSizeClass, options: options.sizeClass},
+        {name: "Vertical Size Class", onInputChange, value: c.verticalSizeClass, options: options.sizeClass},
+        {name: "Min Content Size Category", onInputChange, value: c.minContentSizeCategory, options: options.contSize},
+        {name: "Max Content Size Category", onInputChange, value: c.maxContentSizeCategory, options: options.contSize},
+        {name: "Min Spec Version", onInputChange, value: c.minSpecVersion},
+        {name: "Max Spec Version", onInputChange, value: c.maxSpecVersion},
+        {name: "Min Columns", onInputChange, value: c.minColumns},
+        {name: "Max Columns", onInputChange, value: c.maxColumns},
+        {name: "Min Viewport Aspect Ratio", onInputChange, value: c.minViewportAspectRatio},
+        {name: "Max Viewport Aspect Ratio", onInputChange, value: c.maxViewportAspectRatio},
+        {name: "Min Viewport Width", onInputChange, value: c.minViewportWidth},
+        {name: "Max Viewport Width", onInputChange, value: c.maxViewportWidth},
+        {name: "Platform", onInputChange, value: c.platform, options: options.platform},
     ]
 
-    return (activeConditional === name) 
+    return (activeConditionalType === name) 
         ? (
             <>
                 <button name="conditional-back" onClick={onClick}>{<Icon fontSize="inherit">arrow_back_ios</Icon>}</button>
@@ -45,7 +45,7 @@ const ConditionalsForm = ({identifier, name, activeConditional, conditions, onIn
 ConditionalsForm.propTypes = {
     identifier: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    activeConditional: PropTypes.oneOf(['', 'component', 'style', 'layout']).isRequired,
+    activeConditionalType: PropTypes.oneOf(['', 'component', 'style', 'layout']).isRequired,
     conditions: PropTypes.shape({
         viewLocation: PropTypes.oneOf(options.viewLocation),
         subscriptionStatus: PropTypes.oneOf(options.subscriptionStatus),

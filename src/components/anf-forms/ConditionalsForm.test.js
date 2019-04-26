@@ -11,6 +11,6 @@ it('renders without crashing', () => {
     onClick: jest.fn(),
   }
 
-  ReactDOM.render(<ConditionalsForm activeConditional='' conditions={conditions} {...miscProps} {...events} />, div)
+  ReactDOM.render(<ConditionalsForm activeConditionalType='' conditions={conditions} {...miscProps} {...events} />, div)
   ReactDOM.unmountComponentAtNode(div)
 })

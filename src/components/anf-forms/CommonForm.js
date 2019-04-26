@@ -5,12 +5,36 @@ import Fieldset from './Fieldset'
 import Checkbox from './Checkbox'
 import Select from './Select'
 import FillForm from './FillForm'
+import ConditionalsForm from './ConditionalsForm'
 import options from './selectOptions'
 
-const CommonForm = ({anfComponent: {identifier, role, hidden, anchor: a, layout: l, style: s}, onInputChange}) => {
+const CommonForm = ({anfComponent, onInputChange, activeConditionalType, conditionalIndex}) => {
+    const {conditionals} = anfComponent
+    let conditions = {}
+
+    if (conditionals && conditionals.length && typeof conditionalIndex === 'number') {
+        // using conditions[0] for all until I know why they are using an array in the first place
+        switch(activeConditionalType) {
+            case 'component':
+                anfComponent = conditionals[conditionalIndex]
+                break
+            case 'style':
+                anfComponent = {style: anfComponent.style.conditionals[conditionalIndex]}
+                break
+            case 'layout':
+                anfComponent = {layout: anfComponent.layout.conditionals[conditionalIndex]}
+                break
+            default:
+                console.log('missed conditional case in CommonForm switch()')
+                break
+        }
+        conditions = anfComponent.conditions[0]
+    }
+
+    let {identifier, role, hidden, anchor: a, layout: l, style: s, ...rest} = anfComponent
     const {margin: m} = l
     const {border: b} = s
-
+    
     const anchorInputs = [
         {name: "Target", value: a.target, onInputChange},
         {name: "Target Component Identifier", value: a.targetComponentIdentifier, onInputChange, options: options.targetComponentIdentifier },
@@ -54,7 +78,8 @@ const CommonForm = ({anfComponent: {identifier, role, hidden, anchor: a, layout:
     return (
         <div className="CommonForm">
             <p>Identifier: {identifier}</p>
-            <Select name="role" value={role} onInputChange={onInputChange} classes="half-width" options={options.role} />
+            <ConditionalsForm {...{identifier, activeConditionalType, onInputChange, conditions}} name="component"  /><br/>
+            {(activeConditionalType === '') && <Select name="role" value={role} onInputChange={onInputChange} classes="half-width" options={options.role} />}
             <Checkbox name="Hidden" onInputChange={onInputChange} classes="quarter-width" checked={false} />
             <Fieldset legend="ANCHOR" inputs={anchorInputs} />
             <Fieldset legend="LAYOUT" inputs={layoutInputs}>
@@ -62,7 +87,7 @@ const CommonForm = ({anfComponent: {identifier, role, hidden, anchor: a, layout:
             </Fieldset>
             <Fieldset legend="STYLE" inputs={styleInputs}>
                 <Fieldset legend="BORDER" inputs={borderInputs} />
-                <FillForm fill={s.fill} />
+                <FillForm fill={s.fill} {...{onInputChange}} />
             </Fieldset>
         </div>
     )
