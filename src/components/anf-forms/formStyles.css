@@ -55,3 +55,12 @@ select {
 .margin-btm-small {
     margin-bottom: 10px;
 }
+
+button[name="conditional-back"] {
+    border-radius: 4px;
+    height: 20px;
+    width: 20px;
+    padding-left: 5px;
+    padding-top: 3px;
+    margin-bottom: 10px;
+}
