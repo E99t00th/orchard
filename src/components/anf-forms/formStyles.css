@@ -69,3 +69,7 @@ button[name="conditional-back"] {
     padding-top: 3px;
     margin-bottom: 10px;
 }
+
+.red {
+    color: red!important;
+}

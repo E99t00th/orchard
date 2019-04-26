@@ -1,13 +1,15 @@
 import React from 'react'
 
-const Checkbox = ({name, checked, classes, onInputChange}) => {
-    const htmlName = name.split(' ').join('-').toLowerCase()
+const Checkbox = ({name, checked, classes, onInputChange: onChange, hide = false}) => {
+    const htmlFor = name.split(' ').join('-').toLowerCase()
+
+    const className = (hide) ? classes + ' hide' : classes
 
     return (
         <>
-            <label className={classes} htmlFor={htmlName}>
+            <label {...{className, htmlFor}}>
                 {name}
-                <input type="checkbox" className="margin-btm-small" checked={checked} name={htmlName} onChange={onInputChange} />
+                <input type="checkbox" className="margin-btm-small" name={htmlFor} {...{checked, onChange}} />
             </label>
         </>
     )

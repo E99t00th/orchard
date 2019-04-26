@@ -2,17 +2,17 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import './formStyles.css'
-import Input from './Input'
+import Checkbox from './Checkbox'
 
 export const inputObject = {
-    name: 'Test Input', 
-    classes: '', 
-    value: '',
+    name: "Test Checkbox", 
+    checked: false, 
+    classes: '',
 }
 
-export const inputObjectWithValue = {
+export const inputObjectChecked = {
     ...inputObject,
-    value: 'cool text here',
+    checked: true,
 }
 
 export const inputObjectWithClasses = {
@@ -29,9 +29,9 @@ export const actions = {
     onInputChange: action('updated input'),
 }
 
-storiesOf('Input', module)
+storiesOf('Checkbox', module)
     .addDecorator(story => <div className="ComponentEditor">{story()}</div>)
-    .add('default', () => <Input {...inputObject} {...actions} />)
-    .add('with value', () => <Input {...inputObjectWithValue} {...actions} />)
-    .add('with classes', () => <Input {...inputObjectWithClasses} {...actions} />)
-    .add('hidden', () => <Input {...inputObjectHidden} {...actions} />)
+    .add('default', () => <Checkbox {...inputObject} {...actions} />)
+    .add('checked', () => <Checkbox {...inputObjectChecked} {...actions} />)
+    .add('with classes', () => <Checkbox {...inputObjectWithClasses} {...actions} />)
+    .add('hidden', () => <Checkbox {...inputObjectHidden} {...actions} />)
