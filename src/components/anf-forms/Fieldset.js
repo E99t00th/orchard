@@ -19,7 +19,7 @@ const Fieldset = ({legend, children, inputs, hide = false}) => {
 
     }
 
-    const className = "margin-btm-small" + (hide) ? ' hide' : ''
+    const className = "margin-btm-small" + ((hide) ? ' hide' : '')
 
     return (
         <fieldset {...{className}}>
