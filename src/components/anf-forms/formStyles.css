@@ -29,6 +29,12 @@ select {
     max-width: 90%;
 }
 
+.default-input, .default-select, .default-checkbox {
+    width: 50%;
+    max-width: 50%;
+    display: inline-block;
+}
+
 .whole-width {
     width: 100%;
     max-width: 100%;

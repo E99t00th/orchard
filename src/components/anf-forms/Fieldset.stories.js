@@ -24,11 +24,13 @@ export const inputsGroupTwo = [
 ]
 
 export const fieldsetObject = {
+    identifier: '09872345757',
     legend: 'Test Fieldset', 
     inputs: inputsGroupOne,
 }
 
 export const fieldsetObjectTwo = {
+    identifier: '09872345757',
     legend: 'Test Fieldset 2', 
     inputs: inputsGroupTwo,
 }

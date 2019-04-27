@@ -1,9 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Select = ({name, value, options, classes, onInputChange: onChange, hide = false}) => {
     const htmlFor = name.split(' ').join('-').toLowerCase()
-
-    const className = classes + ((hide) ? ' hide' : '')
+    let className = classes || 'default-select'
+        className += ((hide) ? ' hide' : '')
 
     const mapOptions = x => <option key={x} value={x}>{x}</option>
     
@@ -17,6 +18,15 @@ const Select = ({name, value, options, classes, onInputChange: onChange, hide = 
             </label>
         </>
     )
+}
+
+Select.propTypes = {
+    name: PropTypes.string, 
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    options: PropTypes.array,
+    classes: PropTypes.string, 
+    onInputChange: PropTypes.func, 
+    hide: PropTypes.bool,
 }
 
 export default Select

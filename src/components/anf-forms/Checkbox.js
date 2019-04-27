@@ -1,9 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Checkbox = ({name, checked, classes, onInputChange: onChange, hide = false}) => {
     const htmlFor = name.split(' ').join('-').toLowerCase()
-
-    const className = (hide) ? classes + ' hide' : classes
+    let className = classes || 'default-checkbox'
+        className += ((hide) ? ' hide' : '')
 
     return (
         <>
@@ -13,6 +14,14 @@ const Checkbox = ({name, checked, classes, onInputChange: onChange, hide = false
             </label>
         </>
     )
+}
+
+Checkbox.propTypes = {
+    name: PropTypes.string, 
+    checked: PropTypes.bool,
+    classes: PropTypes.string, 
+    onInputChange: PropTypes.func, 
+    hide: PropTypes.bool,
 }
 
 export default Checkbox

@@ -1,30 +1,16 @@
 import React from 'react'
-import Input from './Input'
-import Select from './Select'
-import Checkbox from './Checkbox'
-import customInputs from './customInputs'
+import mapInputs from './mapInputs'
 
-const Fieldset = ({legend, children, inputs, hide = false}) => {
-
-    const mapInputs = (x, i) => {
-        const classes = x.classes || "half-width"
-        
-        if (x.custom) { return customInputs[custom](x, i) }
-
-        if (x.options) { return <Select {...x} key={legend + i} classes={classes} /> }
-
-        if (typeof x.checked === "boolean") { return <Checkbox {...x} key={legend + i} classes={classes} /> }
-
-        return <Input {...x} key={legend + i} classes={classes} />
-
-    }
+const Fieldset = ({identifier, onInputChange, legend, children, inputs, hide = false}) => {
 
     const className = "margin-btm-small" + ((hide) ? ' hide' : '')
+
+    const addProps = x => ({...x, identifier, onInputChange})
 
     return (
         <fieldset {...{className}}>
             <legend>{legend}</legend>
-            {(inputs) && inputs.map(mapInputs)}
+            {(inputs) && inputs.map(addProps).map(mapInputs)}
             {children}
         </fieldset>
     )
