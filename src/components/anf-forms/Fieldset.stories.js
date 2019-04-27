@@ -35,10 +35,20 @@ export const fieldsetObjectTwo = {
     inputs: inputsGroupTwo,
 }
 
-export const fieldsetWithChildren = {
+export const fieldsetObjectThree = {
     ...fieldsetObject,
-    children: [
-        <Fieldset {...fieldsetObjectTwo} {...actions} />
+    legend: 'Test Fieldset 3', 
+}
+
+export const fieldsetObjectFour = {
+    ...fieldsetObjectTwo,
+    legend: 'Test Fieldset 4', 
+}
+
+export const fieldsetWithNestedFieldset = {
+    ...fieldsetObjectThree,
+    inputs: [
+        fieldsetObjectFour
     ]
 }
 
@@ -50,5 +60,5 @@ export const fieldsetObjectHidden = {
 storiesOf('Fieldset', module)
     .addDecorator(story => <div className="ComponentEditor">{story()}</div>)
     .add('default', () => <Fieldset {...fieldsetObject} {...actions} />)
-    .add('with children', () => <Fieldset {...fieldsetWithChildren} {...actions} />)
+    .add('with nested fieldset', () => <Fieldset {...fieldsetWithNestedFieldset} {...actions} />)
     .add('hidden', () => <Fieldset {...fieldsetObjectHidden} {...actions} />)

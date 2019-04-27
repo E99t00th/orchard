@@ -1,5 +1,5 @@
 import React from 'react'
-import mapInputs from './mapInputs'
+import {mapInputs} from './formUtils'
 
 const Fieldset = ({identifier, onInputChange, legend, children, inputs, hide = false}) => {
 
