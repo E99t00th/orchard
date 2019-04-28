@@ -18,6 +18,9 @@ const selectOptions = {
     fillMode: ['fit', 'cover'],
     fillAttachment: ['fixed', 'scroll'],
     fillRepeat: ['none', 'x', 'y', 'both'],
+    animationType: ['appear', 'fade_in', 'move_in', 'scale_fade'],
+    behaviorType: ['background_motion', 'background_parallax', 'motion', 'parallax', 'springy'],
+    format: ['markdown', 'html', 'none'] 
 }
 
 export default selectOptions

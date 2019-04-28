@@ -9,7 +9,7 @@ export const inputObject = {
     name: 'Test Select', 
     classes: '', 
     value: options.role[0],
-    options: options.role
+    options: 'role'
 }
 
 export const inputObjectNewValue = {
