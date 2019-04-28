@@ -48,7 +48,8 @@ export const fieldsetObjectFour = {
 export const fieldsetWithNestedFieldset = {
     ...fieldsetObjectThree,
     inputs: [
-        fieldsetObjectFour
+        ...fieldsetObjectThree.inputs,
+        fieldsetObjectFour,
     ]
 }
 
