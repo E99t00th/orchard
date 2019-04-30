@@ -8,13 +8,14 @@ import options from './selectOptions'
 export const inputObject = {
     name: 'Test Select', 
     classes: '', 
-    value: options.role[0],
-    options: 'role'
+    value: 'testSelect',
+    context: {testSelect: options.role[0]},
+    options: 'role',
 }
 
 export const inputObjectNewValue = {
     ...inputObject,
-    value: options.role[1],
+    context: {testSelect: options.role[1]},
 }
 
 export const inputObjectWithClasses = {

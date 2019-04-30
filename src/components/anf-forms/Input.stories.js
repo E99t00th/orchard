@@ -6,13 +6,14 @@ import Input from './Input'
 
 export const inputObject = {
     name: 'Test Input', 
+    value: 'testInput',
     classes: '', 
-    value: '',
+    context: {testInput: '',}
 }
 
 export const inputObjectWithValue = {
     ...inputObject,
-    value: 'cool text here',
+    context: {testInput: 'cool text here',}
 }
 
 export const inputObjectWithClasses = {

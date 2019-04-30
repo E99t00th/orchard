@@ -2,24 +2,26 @@ import React from 'react'
 import Input from './Input'
 import Select from './Select'
 import Checkbox from './Checkbox'
-import customInputs from './customInputs'
 import Fieldset from './Fieldset'
+// import customInputs from './customInputs'
 
-export const mapInputs = (x, i) => {
+const mapInputs = (context, inputs) => {
 
-    const makeKey = (arr) => [x.identifier, ...arr, i].join('').replace(/\s/gi, '')
+    return inputs.map((x, i) => {
 
-    
-    if (x.custom) { return customInputs[custom](x, i) }
+        const makeKey = (arr) => [x.identifier, ...arr, i].join('').replace(/\s/gi, '')
 
-    if (x.legend) { return <Fieldset {...x} key={makeKey([x.legend])} /> }
+        // if (x.custom) { return customInputs[custom](x, i) }
 
-    if (x.options) { return <Select {...x} key={makeKey([x.name])} /> }
+        if (x.legend) { return <Fieldset {...x} context={context[x.contextProp]} key={makeKey([x.legend])} /> }
 
-    if (typeof x.checked === "boolean") { return <Checkbox {...x} key={makeKey([x.name, '100'])} /> }
+        if (x.options) { return <Select {...x} key={makeKey([x.name])} /> }
 
-    return <Input {...x} key={ makeKey([x.name, '200'])} />
+        if (x.checkbox) { return <Checkbox {...x} key={makeKey([x.name, '100'])} /> }
 
+        return <Input {...x} key={ makeKey([x.name, '200'])} />
+
+    })
 }
 
 export default mapInputs

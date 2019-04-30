@@ -6,13 +6,19 @@ import Checkbox from './Checkbox'
 
 export const inputObject = {
     name: "Test Checkbox", 
-    checked: false, 
+    checkbox: true,
     classes: '',
+    value: 'testCheckbox',
+    context: {
+        testCheckbox: false
+    }
 }
 
 export const inputObjectChecked = {
     ...inputObject,
-    checked: true,
+    context: {
+        testCheckbox: true
+    },
 }
 
 export const inputObjectWithClasses = {

@@ -4,6 +4,18 @@ const dummydata = {
             identifier: '1893458237',
             role: 'title',
             hidden: false,
+            conditional: [
+                {
+                    anchor: {
+                        originAnchorPosition: 'bottom'
+                    },
+                    conditions: [
+                        {
+                            minColumns: 3
+                        }
+                    ]
+                }
+            ],
             anchor: {
                 target: 'p01',
                 targetComponentIdentifier: '41956782409',

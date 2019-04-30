@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import selectOptions from './selectOptions'
 
-const Select = ({name, value, options, classes, onInputChange: onChange, hide = false}) => {
+const Select = ({name, value, options, classes, onInputChange: onChange, context, hide = false}) => {
     const htmlFor = name.split(' ').join('-').toLowerCase()
     let className = classes || 'default-select'
         className += ((hide) ? ' hide' : '')
@@ -15,7 +15,7 @@ const Select = ({name, value, options, classes, onInputChange: onChange, hide = 
         <>
             <label {...{className, htmlFor}}>
                 {name}<br/>
-                <select className="margin-btm-small" name={htmlFor} {...{value, onChange}}>
+                <select className="margin-btm-small" name={htmlFor} value={context[value]} {...{onChange}}>
                     {optionsArr.map(mapOptions)}
                 </select>
             </label>
@@ -24,11 +24,11 @@ const Select = ({name, value, options, classes, onInputChange: onChange, hide = 
 }
 
 Select.propTypes = {
-    name: PropTypes.string, 
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    options: PropTypes.string,
+    name: PropTypes.string.isRequired, 
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    options: PropTypes.string.isRequired,
     classes: PropTypes.string, 
-    onInputChange: PropTypes.func, 
+    onInputChange: PropTypes.func.isRequired, 
     hide: PropTypes.bool,
 }
 
