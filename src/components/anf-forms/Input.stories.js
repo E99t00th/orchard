@@ -30,7 +30,7 @@ export const actions = {
     onInputChange: action('updated input'),
 }
 
-storiesOf('Input', module)
+storiesOf('Basic Form Components/Input', module)
     .addDecorator(story => <div className="ComponentEditor">{story()}</div>)
     .add('default', () => <Input {...inputObject} {...actions} />)
     .add('with value', () => <Input {...inputObjectWithValue} {...actions} />)

@@ -35,7 +35,7 @@ export const actions = {
     onInputChange: action('updated input'),
 }
 
-storiesOf('Checkbox', module)
+storiesOf('Basic Form Components/Checkbox', module)
     .addDecorator(story => <div className="ComponentEditor">{story()}</div>)
     .add('default', () => <Checkbox {...inputObject} {...actions} />)
     .add('checked', () => <Checkbox {...inputObjectChecked} {...actions} />)

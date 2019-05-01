@@ -22,7 +22,7 @@ export const anchorFieldsetObjectHidden = {
     hide: true,
 }
 
-storiesOf('AnchorFieldset', module)
+storiesOf('fieldsets/AnchorFieldset', module)
     .addDecorator(story => <div className="ComponentEditor">{story()}</div>)
     .add('default', () => <AnchorFieldset {...anchorFieldsetObject} {...actions} />)
     .add('hidden', () => <AnchorFieldset {...anchorFieldsetObjectHidden} {...actions} />)

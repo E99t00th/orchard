@@ -24,7 +24,7 @@ export const layoutFieldsetObjectHidden = {
     hide: true,
 }
 
-storiesOf('LayoutFieldset', module)
+storiesOf('fieldsets/LayoutFieldset', module)
     .addDecorator(story => <div className="ComponentEditor">{story()}</div>)
     .add('default', () => <LayoutFieldset {...layoutFieldsetObject} {...actions} />)
     .add('hidden', () => <LayoutFieldset {...layoutFieldsetObjectHidden} {...actions} />)

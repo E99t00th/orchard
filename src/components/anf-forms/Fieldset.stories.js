@@ -78,7 +78,7 @@ export const fieldsetObjectHidden = {
     hide: true,
 }
 
-storiesOf('Fieldset', module)
+storiesOf('Basic Form Components/Fieldset', module)
     .addDecorator(story => <div className="ComponentEditor">{story()}</div>)
     .add('default', () => <Fieldset {...fieldsetObject} {...actions} />)
     .add('with nested fieldset', () => <Fieldset {...fieldsetObjectTwo} {...actions} />)

@@ -23,7 +23,7 @@ export const conditionalFieldsetObject = {
     hide: false,
 }
 
-storiesOf('ConditionalFieldset', module)
+storiesOf('fieldsets/ConditionalFieldset', module)
     .addDecorator(story => <div className="ComponentEditor">{story()}</div>)
     .add('default', () => <ConditionalFieldset {...conditionalFieldsetObject} {...actions} />)
     .add('hidden', () => <ConditionalFieldset {...conditionalFieldsetObjectHidden} {...actions} />)
