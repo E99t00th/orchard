@@ -12,6 +12,7 @@ export const actions = {
 
 export const conditionalFieldsetObjectHidden = {
     identifier: '09872345757',
+    legend: 'Conditions',
     context: data.common[0].conditional[0].conditions[0],
     hide: true,
     keyId: 100,
