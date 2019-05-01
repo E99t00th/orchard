@@ -31,7 +31,7 @@ const dummydata = {
                 maximumContentWidth: '100vw',
                 horizontalContentAlignment: 'left',
                 ignoreDocumentGutter: true,
-                ignoreDocumentMargin: true,
+                ignoreDocumentMargin: false,
                 margin: {
                     top: '3pt',
                     right: '3pt',
