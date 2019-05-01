@@ -1,17 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {mapInputs} from './formUtils'
+import mapInputs from './formUtils'
 
-const FormPanel = ({identifier, classes, onInputChange, inputs, hide = false}) => {
+export const FormPanel = ({identifier,  onInputChange, children, classes, context, inputs, hide = false}) => {
 
     let className = classes || 'default-formpanel' 
         className += ((hide) ? ' hide' : '')
 
-    const addProps = x => ({...x, identifier, onInputChange})
+    const addProps = (x) => ({...x, identifier, onInputChange, context})
 
     return (
         <div {...{className}}>
-            {(inputs) && inputs.map(addProps).map(mapInputs)}
+            {children}
+            {(inputs) && mapInputs(context, inputs.map(addProps))}
         </div>
     )
 }
